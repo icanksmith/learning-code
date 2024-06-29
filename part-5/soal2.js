@@ -13,13 +13,13 @@
 //tips gunakan keyword ini di google "conditional switch case javascript"
 //dan mulailah membaca dan mencontek di stackoverflow xixixi
 
-let tanggal = 34; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
+let tanggal = 31; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
 let bulan = 2; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-let tahun = 1800; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
+let tahun = 1900; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
 //code switch case kamu disini
 
-if (tanggal < 1 || tanggal > 31) {
+if (tanggal >= 1 && tanggal <= 31) {
     console.log(`${tanggal}`);
 }
 
@@ -62,6 +62,6 @@ switch (bulan) {
         break;
 }
 
-if (tahun < 1900 || tahun > 2200) {
+if (tahun >= 1900 && tahun <= 2200) {
     console.log(`${tahun}`);
 }
